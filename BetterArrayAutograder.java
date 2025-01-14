@@ -57,8 +57,13 @@ public class BetterArrayAutograder{
   public static void testAdd(){
     BetterArray a1 = new BetterArray();
     BetterArray a2 = new BetterArray(6);
+    
     a1.add(12);
+    System.out.println(a1.size());
+    
     a1.add(42);
+    System.out.println(a1.size());
+    
     a1.add(50);
 
 
@@ -70,6 +75,7 @@ public class BetterArrayAutograder{
     a1.add(0, 100);
 
     int[] b2 = {100, 12, 42, 21, 50, 0, 0, 0};
+    
     boolean t2 = arrayEquals(a1.array, b2);
 
     a2.add(20);
